@@ -10,28 +10,61 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    
+    var window: UIWindow?
+    static var shared:AppDelegate{
+        return UIApplication.shared.delegate as! AppDelegate
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        print(logClassName, "Welcome to BBC News Ramon")
+        
+        setupNavigationBarStyle()
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+//        if ProcessInfo.processInfo.arguments.contains("TEST"){
+//            print(logClassName, "I am testing")
+//            #if !DEV
+//            window?.rootViewController = UINavigationController(rootViewController: HeadlinesViewController(networkHelper: NetworkHelper(network: MockNetwork())))
+//            #endif
+//        }
+//        else{
+//            window?.rootViewController = UINavigationController(rootViewController: HeadlinesViewController(networkHelper: NetworkHelper.shared))
+//        }
+        
         return true
     }
-
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
-
-
+    
+    func applicationWillResignActive(_ application: UIApplication) {}
+    
+    func applicationDidEnterBackground(_ application: UIApplication) {}
+    
+    func applicationWillEnterForeground(_ application: UIApplication) {}
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {}
+    
+    func applicationWillTerminate(_ application: UIApplication) {}
+    
 }
+
+
+    extension AppDelegate{
+        
+        func setupNavigationBarStyle() {
+                    
+            UINavigationBar.appearance().barTintColor = UIColor.navigationBarBackground
+            UINavigationBar.appearance().tintColor = UIColor.navigationBarTint
+            
+            UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.navigationBarText]
+            
+            UINavigationBar.appearance().isTranslucent = false
+            
+            UITabBar.appearance().barTintColor = UIColor.navigationBarBackground
+            UITabBar.appearance().tintColor = UIColor.navigationBarTint
+        }
+        
+    }
 

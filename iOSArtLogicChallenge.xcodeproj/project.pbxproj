@@ -8,13 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		CFC841CD239AABFC00E05565 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC841CC239AABFC00E05565 /* AppDelegate.swift */; };
-		CFC841CF239AABFC00E05565 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC841CE239AABFC00E05565 /* SceneDelegate.swift */; };
-		CFC841D1239AABFC00E05565 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC841D0239AABFC00E05565 /* ViewController.swift */; };
-		CFC841D4239AABFC00E05565 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC841D2239AABFC00E05565 /* Main.storyboard */; };
 		CFC841D6239AABFE00E05565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC841D5239AABFE00E05565 /* Assets.xcassets */; };
 		CFC841D9239AABFE00E05565 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC841D7239AABFE00E05565 /* LaunchScreen.storyboard */; };
 		CFC841E4239AABFE00E05565 /* iOSArtLogicChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC841E3239AABFE00E05565 /* iOSArtLogicChallengeTests.swift */; };
 		CFC841EF239AABFE00E05565 /* iOSArtLogicChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC841EE239AABFE00E05565 /* iOSArtLogicChallengeUITests.swift */; };
+		CFC8420E239AB75F00E05565 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC84206239AB74A00E05565 /* NSObjectExtension.swift */; };
+		CFC8420F239AB76100E05565 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC84205239AB74900E05565 /* StringExtension.swift */; };
+		CFC84210239AB76400E05565 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC8420A239AB74A00E05565 /* UIButtonExtension.swift */; };
+		CFC84211239AB76600E05565 /* UIEdgeInsetsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC84207239AB74A00E05565 /* UIEdgeInsetsExtension.swift */; };
+		CFC84212239AB76900E05565 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC84209239AB74A00E05565 /* UIImageExtension.swift */; };
+		CFC84213239AB76C00E05565 /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC8420C239AB74A00E05565 /* UINavigationControllerExtension.swift */; };
+		CFC84214239AB76F00E05565 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC84204239AB74900E05565 /* UIViewControllerExtension.swift */; };
+		CFC84215239AB77200E05565 /* UIVIewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC84208239AB74A00E05565 /* UIVIewExtension.swift */; };
+		CFC84218239AB79000E05565 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC84216239AB79000E05565 /* Constants.swift */; };
+		CFC84219239AB79000E05565 /* StyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC84217239AB79000E05565 /* StyleManager.swift */; };
+		CFC8421B239AB7CC00E05565 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC8421A239AB7CC00E05565 /* Network.swift */; };
+		CFC8421E239AB86000E05565 /* LoaderOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC8421C239AB86000E05565 /* LoaderOverlay.swift */; };
+		CFC8421F239AB86000E05565 /* BaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC8421D239AB86000E05565 /* BaseLabel.swift */; };
+		CFC84221239AC68D00E05565 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC84220239AC68D00E05565 /* ExtensionsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +48,6 @@
 /* Begin PBXFileReference section */
 		CFC841C9239AABFC00E05565 /* iOSArtLogicChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSArtLogicChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC841CC239AABFC00E05565 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CFC841CE239AABFC00E05565 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CFC841D0239AABFC00E05565 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CFC841D3239AABFC00E05565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFC841D5239AABFE00E05565 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFC841D8239AABFE00E05565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFC841DA239AABFE00E05565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +57,20 @@
 		CFC841EA239AABFE00E05565 /* iOSArtLogicChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSArtLogicChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC841EE239AABFE00E05565 /* iOSArtLogicChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSArtLogicChallengeUITests.swift; sourceTree = "<group>"; };
 		CFC841F0239AABFE00E05565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFC84204239AB74900E05565 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		CFC84205239AB74900E05565 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		CFC84206239AB74A00E05565 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		CFC84207239AB74A00E05565 /* UIEdgeInsetsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsExtension.swift; sourceTree = "<group>"; };
+		CFC84208239AB74A00E05565 /* UIVIewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewExtension.swift; sourceTree = "<group>"; };
+		CFC84209239AB74A00E05565 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		CFC8420A239AB74A00E05565 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		CFC8420C239AB74A00E05565 /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
+		CFC84216239AB79000E05565 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CFC84217239AB79000E05565 /* StyleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleManager.swift; sourceTree = "<group>"; };
+		CFC8421A239AB7CC00E05565 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		CFC8421C239AB86000E05565 /* LoaderOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderOverlay.swift; sourceTree = "<group>"; };
+		CFC8421D239AB86000E05565 /* BaseLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLabel.swift; sourceTree = "<group>"; };
+		CFC84220239AC68D00E05565 /* ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +122,11 @@
 			isa = PBXGroup;
 			children = (
 				CFC841CC239AABFC00E05565 /* AppDelegate.swift */,
-				CFC841CE239AABFC00E05565 /* SceneDelegate.swift */,
-				CFC841D0239AABFC00E05565 /* ViewController.swift */,
-				CFC841D2239AABFC00E05565 /* Main.storyboard */,
-				CFC841D5239AABFE00E05565 /* Assets.xcassets */,
-				CFC841D7239AABFE00E05565 /* LaunchScreen.storyboard */,
-				CFC841DA239AABFE00E05565 /* Info.plist */,
+				CFC841FD239AAFC000E05565 /* Helpers */,
+				CFC84200239AB60B00E05565 /* Model */,
+				CFC84201239AB62900E05565 /* View */,
+				CFC84203239AB64400E05565 /* Controller */,
+				CFC841FC239AAF0600E05565 /* SupportingFiles */,
 			);
 			path = iOSArtLogicChallenge;
 			sourceTree = "<group>";
@@ -113,6 +134,7 @@
 		CFC841E2239AABFE00E05565 /* iOSArtLogicChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				CFC84220239AC68D00E05565 /* ExtensionsTests.swift */,
 				CFC841E3239AABFE00E05565 /* iOSArtLogicChallengeTests.swift */,
 				CFC841E5239AABFE00E05565 /* Info.plist */,
 			);
@@ -126,6 +148,81 @@
 				CFC841F0239AABFE00E05565 /* Info.plist */,
 			);
 			path = iOSArtLogicChallengeUITests;
+			sourceTree = "<group>";
+		};
+		CFC841FC239AAF0600E05565 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CFC841D5239AABFE00E05565 /* Assets.xcassets */,
+				CFC841D7239AABFE00E05565 /* LaunchScreen.storyboard */,
+				CFC841DA239AABFE00E05565 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		CFC841FD239AAFC000E05565 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CFC841FE239AB58E00E05565 /* Extensions */,
+				CFC841FF239AB5D200E05565 /* Network */,
+				CFC84216239AB79000E05565 /* Constants.swift */,
+				CFC84217239AB79000E05565 /* StyleManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CFC841FE239AB58E00E05565 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CFC84206239AB74A00E05565 /* NSObjectExtension.swift */,
+				CFC84205239AB74900E05565 /* StringExtension.swift */,
+				CFC8420A239AB74A00E05565 /* UIButtonExtension.swift */,
+				CFC84207239AB74A00E05565 /* UIEdgeInsetsExtension.swift */,
+				CFC84209239AB74A00E05565 /* UIImageExtension.swift */,
+				CFC8420C239AB74A00E05565 /* UINavigationControllerExtension.swift */,
+				CFC84204239AB74900E05565 /* UIViewControllerExtension.swift */,
+				CFC84208239AB74A00E05565 /* UIVIewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CFC841FF239AB5D200E05565 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CFC8421A239AB7CC00E05565 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CFC84200239AB60B00E05565 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFC84201239AB62900E05565 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFC84202239AB63900E05565 /* ViewModel */,
+				CFC8421D239AB86000E05565 /* BaseLabel.swift */,
+				CFC8421C239AB86000E05565 /* LoaderOverlay.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFC84202239AB63900E05565 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CFC84203239AB64400E05565 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +331,6 @@
 			files = (
 				CFC841D9239AABFE00E05565 /* LaunchScreen.storyboard in Resources */,
 				CFC841D6239AABFE00E05565 /* Assets.xcassets in Resources */,
-				CFC841D4239AABFC00E05565 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +355,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFC841D1239AABFC00E05565 /* ViewController.swift in Sources */,
+				CFC84215239AB77200E05565 /* UIVIewExtension.swift in Sources */,
 				CFC841CD239AABFC00E05565 /* AppDelegate.swift in Sources */,
-				CFC841CF239AABFC00E05565 /* SceneDelegate.swift in Sources */,
+				CFC8421E239AB86000E05565 /* LoaderOverlay.swift in Sources */,
+				CFC84214239AB76F00E05565 /* UIViewControllerExtension.swift in Sources */,
+				CFC8421F239AB86000E05565 /* BaseLabel.swift in Sources */,
+				CFC84213239AB76C00E05565 /* UINavigationControllerExtension.swift in Sources */,
+				CFC8420F239AB76100E05565 /* StringExtension.swift in Sources */,
+				CFC8420E239AB75F00E05565 /* NSObjectExtension.swift in Sources */,
+				CFC84211239AB76600E05565 /* UIEdgeInsetsExtension.swift in Sources */,
+				CFC84210239AB76400E05565 /* UIButtonExtension.swift in Sources */,
+				CFC84212239AB76900E05565 /* UIImageExtension.swift in Sources */,
+				CFC84218239AB79000E05565 /* Constants.swift in Sources */,
+				CFC8421B239AB7CC00E05565 /* Network.swift in Sources */,
+				CFC84219239AB79000E05565 /* StyleManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFC841E4239AABFE00E05565 /* iOSArtLogicChallengeTests.swift in Sources */,
+				CFC84221239AC68D00E05565 /* ExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +405,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CFC841D2239AABFC00E05565 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CFC841D3239AABFC00E05565 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CFC841D7239AABFE00E05565 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -436,7 +536,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33482W4AH2;
-				INFOPLIST_FILE = iOSArtLogicChallenge/Info.plist;
+				INFOPLIST_FILE = iOSArtLogicChallenge/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +554,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33482W4AH2;
-				INFOPLIST_FILE = iOSArtLogicChallenge/Info.plist;
+				INFOPLIST_FILE = iOSArtLogicChallenge/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
