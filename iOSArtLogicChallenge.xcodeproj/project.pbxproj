@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CFA2156E239AF5FE00B3C16C /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA2156D239AF5FE00B3C16C /* SDWebImage.framework */; };
 		CFC841CD239AABFC00E05565 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC841CC239AABFC00E05565 /* AppDelegate.swift */; };
 		CFC841D6239AABFE00E05565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC841D5239AABFE00E05565 /* Assets.xcassets */; };
 		CFC841D9239AABFE00E05565 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC841D7239AABFE00E05565 /* LaunchScreen.storyboard */; };
@@ -26,6 +27,13 @@
 		CFC8421E239AB86000E05565 /* LoaderOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC8421C239AB86000E05565 /* LoaderOverlay.swift */; };
 		CFC8421F239AB86000E05565 /* BaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC8421D239AB86000E05565 /* BaseLabel.swift */; };
 		CFC84221239AC68D00E05565 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC84220239AC68D00E05565 /* ExtensionsTests.swift */; };
+		CFC84223239ACD9B00E05565 /* ArtworksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC84222239ACD9B00E05565 /* ArtworksViewController.swift */; };
+		CFC84225239ACE2100E05565 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC84224239ACE2100E05565 /* NetworkManager.swift */; };
+		CFC84227239ACFFB00E05565 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC84226239ACFFB00E05565 /* ApiManager.swift */; };
+		CFC84229239AD18300E05565 /* CollectionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC84228239AD18300E05565 /* CollectionResponse.swift */; };
+		CFC8422B239AD28000E05565 /* CollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC8422A239AD28000E05565 /* CollectionItem.swift */; };
+		CFC8422D239AD32D00E05565 /* ImageSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC8422C239AD32D00E05565 /* ImageSet.swift */; };
+		CFC8422F239ADFF200E05565 /* CollectionItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC8422E239ADFF200E05565 /* CollectionItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CFA2156D239AF5FE00B3C16C /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
 		CFC841C9239AABFC00E05565 /* iOSArtLogicChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSArtLogicChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC841CC239AABFC00E05565 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFC841D5239AABFE00E05565 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +80,13 @@
 		CFC8421C239AB86000E05565 /* LoaderOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderOverlay.swift; sourceTree = "<group>"; };
 		CFC8421D239AB86000E05565 /* BaseLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLabel.swift; sourceTree = "<group>"; };
 		CFC84220239AC68D00E05565 /* ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
+		CFC84222239ACD9B00E05565 /* ArtworksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworksViewController.swift; sourceTree = "<group>"; };
+		CFC84224239ACE2100E05565 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CFC84226239ACFFB00E05565 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		CFC84228239AD18300E05565 /* CollectionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionResponse.swift; sourceTree = "<group>"; };
+		CFC8422A239AD28000E05565 /* CollectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionItem.swift; sourceTree = "<group>"; };
+		CFC8422C239AD32D00E05565 /* ImageSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSet.swift; sourceTree = "<group>"; };
+		CFC8422E239ADFF200E05565 /* CollectionItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionItemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFA2156E239AF5FE00B3C16C /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +115,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CFA2156C239AF5FE00B3C16C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFA2156D239AF5FE00B3C16C /* SDWebImage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CFC841C0239AABFC00E05565 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +130,7 @@
 				CFC841E2239AABFE00E05565 /* iOSArtLogicChallengeTests */,
 				CFC841ED239AABFE00E05565 /* iOSArtLogicChallengeUITests */,
 				CFC841CA239AABFC00E05565 /* Products */,
+				CFA2156C239AF5FE00B3C16C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +149,7 @@
 			children = (
 				CFC841CC239AABFC00E05565 /* AppDelegate.swift */,
 				CFC841FD239AAFC000E05565 /* Helpers */,
+				CFC841FF239AB5D200E05565 /* Network */,
 				CFC84200239AB60B00E05565 /* Model */,
 				CFC84201239AB62900E05565 /* View */,
 				CFC84203239AB64400E05565 /* Controller */,
@@ -164,7 +191,6 @@
 			isa = PBXGroup;
 			children = (
 				CFC841FE239AB58E00E05565 /* Extensions */,
-				CFC841FF239AB5D200E05565 /* Network */,
 				CFC84216239AB79000E05565 /* Constants.swift */,
 				CFC84217239AB79000E05565 /* StyleManager.swift */,
 			);
@@ -189,7 +215,9 @@
 		CFC841FF239AB5D200E05565 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				CFC84226239ACFFB00E05565 /* ApiManager.swift */,
 				CFC8421A239AB7CC00E05565 /* Network.swift */,
+				CFC84224239ACE2100E05565 /* NetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -197,6 +225,9 @@
 		CFC84200239AB60B00E05565 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CFC84228239AD18300E05565 /* CollectionResponse.swift */,
+				CFC8422A239AD28000E05565 /* CollectionItem.swift */,
+				CFC8422C239AD32D00E05565 /* ImageSet.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -204,23 +235,17 @@
 		CFC84201239AB62900E05565 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CFC84202239AB63900E05565 /* ViewModel */,
+				CFC8422E239ADFF200E05565 /* CollectionItemTableViewCell.swift */,
 				CFC8421D239AB86000E05565 /* BaseLabel.swift */,
 				CFC8421C239AB86000E05565 /* LoaderOverlay.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		CFC84202239AB63900E05565 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		CFC84203239AB64400E05565 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CFC84222239ACD9B00E05565 /* ArtworksViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -235,6 +260,7 @@
 				CFC841C5239AABFC00E05565 /* Sources */,
 				CFC841C6239AABFC00E05565 /* Frameworks */,
 				CFC841C7239AABFC00E05565 /* Resources */,
+				CFA2156B239AF5BC00B3C16C /* Carthage Run Script */,
 			);
 			buildRules = (
 			);
@@ -350,6 +376,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CFA2156B239AF5BC00B3C16C /* Carthage Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"",
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SDWebImage.framework",
+			);
+			name = "Carthage Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CFC841C5239AABFC00E05565 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -359,14 +408,21 @@
 				CFC841CD239AABFC00E05565 /* AppDelegate.swift in Sources */,
 				CFC8421E239AB86000E05565 /* LoaderOverlay.swift in Sources */,
 				CFC84214239AB76F00E05565 /* UIViewControllerExtension.swift in Sources */,
+				CFC8422D239AD32D00E05565 /* ImageSet.swift in Sources */,
+				CFC84225239ACE2100E05565 /* NetworkManager.swift in Sources */,
 				CFC8421F239AB86000E05565 /* BaseLabel.swift in Sources */,
+				CFC84223239ACD9B00E05565 /* ArtworksViewController.swift in Sources */,
 				CFC84213239AB76C00E05565 /* UINavigationControllerExtension.swift in Sources */,
+				CFC84229239AD18300E05565 /* CollectionResponse.swift in Sources */,
 				CFC8420F239AB76100E05565 /* StringExtension.swift in Sources */,
 				CFC8420E239AB75F00E05565 /* NSObjectExtension.swift in Sources */,
 				CFC84211239AB76600E05565 /* UIEdgeInsetsExtension.swift in Sources */,
 				CFC84210239AB76400E05565 /* UIButtonExtension.swift in Sources */,
+				CFC8422F239ADFF200E05565 /* CollectionItemTableViewCell.swift in Sources */,
 				CFC84212239AB76900E05565 /* UIImageExtension.swift in Sources */,
 				CFC84218239AB79000E05565 /* Constants.swift in Sources */,
+				CFC8422B239AD28000E05565 /* CollectionItem.swift in Sources */,
+				CFC84227239ACFFB00E05565 /* ApiManager.swift in Sources */,
 				CFC8421B239AB7CC00E05565 /* Network.swift in Sources */,
 				CFC84219239AB79000E05565 /* StyleManager.swift in Sources */,
 			);
@@ -536,6 +592,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33482W4AH2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iOSArtLogicChallenge/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -554,6 +614,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33482W4AH2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iOSArtLogicChallenge/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -18,22 +18,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        print(logClassName, "Welcome to BBC News Ramon")
+        print(logClassName, "Welcome to Artlogic")
         
         setupNavigationBarStyle()
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
-//        if ProcessInfo.processInfo.arguments.contains("TEST"){
-//            print(logClassName, "I am testing")
+        if ProcessInfo.processInfo.arguments.contains("TEST"){
+            print(logClassName, "I am testing")
 //            #if !DEV
 //            window?.rootViewController = UINavigationController(rootViewController: HeadlinesViewController(networkHelper: NetworkHelper(network: MockNetwork())))
 //            #endif
-//        }
-//        else{
-//            window?.rootViewController = UINavigationController(rootViewController: HeadlinesViewController(networkHelper: NetworkHelper.shared))
-//        }
+        }
+        else{
+            window?.rootViewController = UINavigationController(rootViewController: ArtworksViewController(apiManager: ApiManager(network: NetworkManager())))
+        }
         
         return true
     }
