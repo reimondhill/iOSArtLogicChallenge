@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CFA2156E239AF5FE00B3C16C /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA2156D239AF5FE00B3C16C /* SDWebImage.framework */; };
 		CFC841CD239AABFC00E05565 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC841CC239AABFC00E05565 /* AppDelegate.swift */; };
 		CFC841D6239AABFE00E05565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC841D5239AABFE00E05565 /* Assets.xcassets */; };
 		CFC841D9239AABFE00E05565 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC841D7239AABFE00E05565 /* LaunchScreen.storyboard */; };
@@ -54,7 +53,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CFA2156D239AF5FE00B3C16C /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
 		CFC841C9239AABFC00E05565 /* iOSArtLogicChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSArtLogicChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC841CC239AABFC00E05565 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFC841D5239AABFE00E05565 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFA2156E239AF5FE00B3C16C /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +115,6 @@
 		CFA2156C239AF5FE00B3C16C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CFA2156D239AF5FE00B3C16C /* SDWebImage.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -260,7 +256,6 @@
 				CFC841C5239AABFC00E05565 /* Sources */,
 				CFC841C6239AABFC00E05565 /* Frameworks */,
 				CFC841C7239AABFC00E05565 /* Resources */,
-				CFA2156B239AF5BC00B3C16C /* Carthage Run Script */,
 			);
 			buildRules = (
 			);
@@ -375,29 +370,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		CFA2156B239AF5BC00B3C16C /* Carthage Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"",
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/SDWebImage.framework",
-			);
-			name = "Carthage Run Script";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CFC841C5239AABFC00E05565 /* Sources */ = {
