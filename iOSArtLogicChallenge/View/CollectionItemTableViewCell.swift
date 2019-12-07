@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SDWebImage
+import SnapKit
 
 
 class CollectionItemTableViewCell: UITableViewCell {
@@ -17,6 +19,9 @@ class CollectionItemTableViewCell: UITableViewCell {
         
         var title: String? {
             return collectionItem.caption
+        }
+        var detailImageURL:URL? {
+            return URL(string: collectionItem.images?.mobile ?? "")
         }
         
         init(collectionItem: CollectionItem) {
@@ -40,7 +45,8 @@ class CollectionItemTableViewCell: UITableViewCell {
     private lazy var detailImageView: UIImageView = {
         let rtView = UIImageView()
         
-        rtView.contentMode = .scaleAspectFit
+        rtView.clipsToBounds = true
+        rtView.contentMode = .scaleAspectFill
         
         return rtView
     }()
@@ -72,11 +78,22 @@ extension CollectionItemTableViewCell {
 private extension CollectionItemTableViewCell {
     
     private func setupView(){
+        contentView.addSubview(detailImageView)
+        detailImageView.snp.makeConstraints { (maker) in
+            maker.top.left.bottom.equalToSuperview()
+            maker.width.equalTo(detailImageView.snp.height)
+        }
+        
         contentView.addSubview(titleLabel)
-        titleLabel.constraintToSuperViewEdges()
+        titleLabel.snp.makeConstraints { (maker) in
+            maker.left.equalTo(detailImageView.snp.right)
+            maker.top.bottom.right.equalToSuperview()
+        }
+        
     }
     
     private func update(dataModel: DataModel?) {
+        detailImageView.sd_setImage(with: dataModel?.detailImageURL, placeholderImage: nil)
         titleLabel.text = dataModel?.title
     }
     

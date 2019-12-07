@@ -48,7 +48,7 @@ extension ArtworksViewController {
         super.viewDidLoad()
         
         setupView()
-        apiManager.getHeadlines { [weak self] (result) in
+        apiManager.getCollections { [weak self] (result) in
             guard let strongSelf = self else { return }
             
             DispatchQueue.main.async {
@@ -107,4 +107,13 @@ extension ArtworksViewController: UITableViewDataSource {
 //MARK: UITableViewDelegate
 extension ArtworksViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        navigationController?.pushViewController(PresentationViewController(presentationID: collectionItems[indexPath.row].uid, apiManager: apiManager), animated: true)
+        
+    }
 }

@@ -1,5 +1,5 @@
 //
-//  ArtworkCollection.swift
+//  PresentationItem.swift
 //  iOSArtLogicChallenge
 //
 //  Created by Ramon Haro Marques on 06/12/2019.
@@ -9,13 +9,13 @@
 import Foundation
 
 
-class CollectionResponse: Codable {
-
-    let collectionItems: [CollectionItem]
+class PresentationItem: Codable {
+    let caption: String
+    let imageSet: ImageSet
     
     enum CodingKeys: String, CodingKey {
-        case collectionItems = "rows"
+        case caption
+        case imageSet = "images"
     }
+    
 }
-
-

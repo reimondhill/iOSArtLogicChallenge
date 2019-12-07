@@ -10,7 +10,8 @@ import Foundation
 
 protocol ApiManaging {
     var token: String { get }
-    func getHeadlines(completion:@escaping (Result<[CollectionItem], Error>)->Void)
+    func getCollections(completion:@escaping (Result<[CollectionItem], Error>)->Void)
+    func getPresentation(uid: String, completion:@escaping (Result<PresentationResponse, Error>)->Void)
 }
 
 enum ApiManagerError:Error{
@@ -38,7 +39,7 @@ extension ApiManager: ApiManaging {
     
     var token: String { return "feca0f24c0724208ac102c17592243a1" }
     
-    func getHeadlines(completion: @escaping (Result<[CollectionItem], Error>) -> Void) {
+    func getCollections(completion: @escaping (Result<[CollectionItem], Error>) -> Void) {
         
         guard let url = URL(string: network.artworks) else {
             completion(.failure(NetworkError.invalidURL))
@@ -58,4 +59,25 @@ extension ApiManager: ApiManaging {
     
     }
         
+    func getPresentation(uid: String, completion: @escaping (Result<PresentationResponse, Error>) -> Void) {
+        
+        let presetationExtended = network.artworks.appending("/\(uid)")
+        guard let url = URL(string: network.artworks) else {
+            completion(.failure(NetworkError.invalidURL))
+            return
+        }
+        
+        network.fetchCodable(url: url, method: .post, params: ["token":token], completion: { (result: Result<PresentationResponse, Error>) in
+            
+            switch result {
+            case .success(let presentationResponse):
+                completion(.success(presentationResponse))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+            
+        })
+        
+    }
+    
 }

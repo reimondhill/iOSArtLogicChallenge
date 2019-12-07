@@ -10,6 +10,7 @@ import Foundation
 
 
 class CollectionItem: Codable {
+    let uid:String
     let caption:String
     let images: ImageSet?
 }
