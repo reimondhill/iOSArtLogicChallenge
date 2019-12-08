@@ -64,7 +64,7 @@ class ExtensionsTests: XCTestCase {
     //MARK:- UIImageExtension
     func testUIImageAspectRatio(){
         
-        var image = UIImage(named: "bbc_logo_white_transparent")!
+        var image = UIImage(named: "app_logo")!
         XCTAssert(image.aspectRatioValue == image.size.width/image.size.height)
         
         image = UIImage()

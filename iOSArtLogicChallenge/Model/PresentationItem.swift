@@ -11,10 +11,12 @@ import Foundation
 
 class PresentationItem: Codable {
     let caption: String
+    let rowCaption: String
     let imageSet: ImageSet
     
     enum CodingKeys: String, CodingKey {
         case caption
+        case rowCaption = "row_caption"
         case imageSet = "images"
     }
     

@@ -11,6 +11,11 @@ import UIKit
 
 extension String{
     
+    /// Returns localisable version if any
+    var localized: String {
+        return NSLocalizedString(self, comment: "")
+    }
+    
     //MARK:- Methods
     /// Returns the height for a String in a UIView container
     /// - Parameters:

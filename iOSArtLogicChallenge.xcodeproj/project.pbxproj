@@ -12,6 +12,14 @@
 		CFBDC69A239B0721001088A3 /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBDC699239B0721001088A3 /* PresentationViewController.swift */; };
 		CFBDC69C239B0AC5001088A3 /* PresentationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBDC69B239B0AC5001088A3 /* PresentationResponse.swift */; };
 		CFBDC69E239B0AE8001088A3 /* PresentationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBDC69D239B0AE8001088A3 /* PresentationItem.swift */; };
+		CFBDC6A0239B8879001088A3 /* PresentationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBDC69F239B8879001088A3 /* PresentationHeaderView.swift */; };
+		CFBDC6A2239B8A62001088A3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBDC6A1239B8A62001088A3 /* BaseViewController.swift */; };
+		CFBDC6A4239B8AD3001088A3 /* ScrollingNavigationBarTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBDC6A3239B8AD3001088A3 /* ScrollingNavigationBarTitleView.swift */; };
+		CFBDC6A7239D3FF9001088A3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFBDC6A9239D3FF9001088A3 /* Localizable.strings */; };
+		CFBDC6AB239D79B2001088A3 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBDC6AA239D79B2001088A3 /* UIFontExtension.swift */; };
+		CFBDC6AE239D9CCA001088A3 /* ResponseAll.json in Resources */ = {isa = PBXBuildFile; fileRef = CFBDC6AC239D9CCA001088A3 /* ResponseAll.json */; };
+		CFBDC6AF239D9CCA001088A3 /* PresentationResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = CFBDC6AD239D9CCA001088A3 /* PresentationResponse.json */; };
+		CFBDC6B1239D9ECE001088A3 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBDC6B0239D9ECE001088A3 /* MockNetworkManager.swift */; };
 		CFC841CD239AABFC00E05565 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC841CC239AABFC00E05565 /* AppDelegate.swift */; };
 		CFC841D6239AABFE00E05565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC841D5239AABFE00E05565 /* Assets.xcassets */; };
 		CFC841D9239AABFE00E05565 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC841D7239AABFE00E05565 /* LaunchScreen.storyboard */; };
@@ -61,7 +69,15 @@
 		CFBDC699239B0721001088A3 /* PresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
 		CFBDC69B239B0AC5001088A3 /* PresentationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationResponse.swift; sourceTree = "<group>"; };
 		CFBDC69D239B0AE8001088A3 /* PresentationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationItem.swift; sourceTree = "<group>"; };
-		CFC841C9239AABFC00E05565 /* iOSArtLogicChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSArtLogicChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFBDC69F239B8879001088A3 /* PresentationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationHeaderView.swift; sourceTree = "<group>"; };
+		CFBDC6A1239B8A62001088A3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CFBDC6A3239B8AD3001088A3 /* ScrollingNavigationBarTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingNavigationBarTitleView.swift; sourceTree = "<group>"; };
+		CFBDC6A8239D3FF9001088A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CFBDC6AA239D79B2001088A3 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		CFBDC6AC239D9CCA001088A3 /* ResponseAll.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ResponseAll.json; sourceTree = "<group>"; };
+		CFBDC6AD239D9CCA001088A3 /* PresentationResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PresentationResponse.json; sourceTree = "<group>"; };
+		CFBDC6B0239D9ECE001088A3 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		CFC841C9239AABFC00E05565 /* Ramon ArtLogic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ramon ArtLogic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC841CC239AABFC00E05565 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFC841D5239AABFE00E05565 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFC841D8239AABFE00E05565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -143,7 +159,7 @@
 		CFC841CA239AABFC00E05565 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CFC841C9239AABFC00E05565 /* iOSArtLogicChallenge.app */,
+				CFC841C9239AABFC00E05565 /* Ramon ArtLogic.app */,
 				CFC841DF239AABFE00E05565 /* iOSArtLogicChallengeTests.xctest */,
 				CFC841EA239AABFE00E05565 /* iOSArtLogicChallengeUITests.xctest */,
 			);
@@ -189,6 +205,9 @@
 				CFC841D5239AABFE00E05565 /* Assets.xcassets */,
 				CFC841D7239AABFE00E05565 /* LaunchScreen.storyboard */,
 				CFC841DA239AABFE00E05565 /* Info.plist */,
+				CFBDC6A9239D3FF9001088A3 /* Localizable.strings */,
+				CFBDC6AC239D9CCA001088A3 /* ResponseAll.json */,
+				CFBDC6AD239D9CCA001088A3 /* PresentationResponse.json */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -214,6 +233,7 @@
 				CFC8420C239AB74A00E05565 /* UINavigationControllerExtension.swift */,
 				CFC84204239AB74900E05565 /* UIViewControllerExtension.swift */,
 				CFC84208239AB74A00E05565 /* UIVIewExtension.swift */,
+				CFBDC6AA239D79B2001088A3 /* UIFontExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -224,6 +244,7 @@
 				CFC84226239ACFFB00E05565 /* ApiManager.swift */,
 				CFC8421A239AB7CC00E05565 /* Network.swift */,
 				CFC84224239ACE2100E05565 /* NetworkManager.swift */,
+				CFBDC6B0239D9ECE001088A3 /* MockNetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -243,9 +264,11 @@
 		CFC84201239AB62900E05565 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CFC8422E239ADFF200E05565 /* CollectionItemTableViewCell.swift */,
 				CFC8421D239AB86000E05565 /* BaseLabel.swift */,
+				CFC8422E239ADFF200E05565 /* CollectionItemTableViewCell.swift */,
 				CFC8421C239AB86000E05565 /* LoaderOverlay.swift */,
+				CFBDC69F239B8879001088A3 /* PresentationHeaderView.swift */,
+				CFBDC6A3239B8AD3001088A3 /* ScrollingNavigationBarTitleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -253,6 +276,7 @@
 		CFC84203239AB64400E05565 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CFBDC6A1239B8A62001088A3 /* BaseViewController.swift */,
 				CFC84222239ACD9B00E05565 /* ArtworksViewController.swift */,
 				CFBDC699239B0721001088A3 /* PresentationViewController.swift */,
 			);
@@ -280,7 +304,7 @@
 				CFBDC697239AFF49001088A3 /* SnapKit */,
 			);
 			productName = iOSArtLogicChallenge;
-			productReference = CFC841C9239AABFC00E05565 /* iOSArtLogicChallenge.app */;
+			productReference = CFC841C9239AABFC00E05565 /* Ramon ArtLogic.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CFC841DE239AABFE00E05565 /* iOSArtLogicChallengeTests */ = {
@@ -371,8 +395,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFBDC6AE239D9CCA001088A3 /* ResponseAll.json in Resources */,
+				CFBDC6A7239D3FF9001088A3 /* Localizable.strings in Resources */,
 				CFC841D9239AABFE00E05565 /* LaunchScreen.storyboard in Resources */,
 				CFC841D6239AABFE00E05565 /* Assets.xcassets in Resources */,
+				CFBDC6AF239D9CCA001088A3 /* PresentationResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,10 +434,14 @@
 				CFC84223239ACD9B00E05565 /* ArtworksViewController.swift in Sources */,
 				CFBDC69A239B0721001088A3 /* PresentationViewController.swift in Sources */,
 				CFC84213239AB76C00E05565 /* UINavigationControllerExtension.swift in Sources */,
+				CFBDC6AB239D79B2001088A3 /* UIFontExtension.swift in Sources */,
 				CFC84229239AD18300E05565 /* CollectionResponse.swift in Sources */,
 				CFC8420F239AB76100E05565 /* StringExtension.swift in Sources */,
 				CFBDC69C239B0AC5001088A3 /* PresentationResponse.swift in Sources */,
+				CFBDC6A2239B8A62001088A3 /* BaseViewController.swift in Sources */,
+				CFBDC6B1239D9ECE001088A3 /* MockNetworkManager.swift in Sources */,
 				CFC8420E239AB75F00E05565 /* NSObjectExtension.swift in Sources */,
+				CFBDC6A4239B8AD3001088A3 /* ScrollingNavigationBarTitleView.swift in Sources */,
 				CFC84211239AB76600E05565 /* UIEdgeInsetsExtension.swift in Sources */,
 				CFC84210239AB76400E05565 /* UIButtonExtension.swift in Sources */,
 				CFC8422F239ADFF200E05565 /* CollectionItemTableViewCell.swift in Sources */,
@@ -420,6 +451,7 @@
 				CFBDC69E239B0AE8001088A3 /* PresentationItem.swift in Sources */,
 				CFC84227239ACFFB00E05565 /* ApiManager.swift in Sources */,
 				CFC8421B239AB7CC00E05565 /* Network.swift in Sources */,
+				CFBDC6A0239B8879001088A3 /* PresentationHeaderView.swift in Sources */,
 				CFC84219239AB79000E05565 /* StyleManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +489,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CFBDC6A9239D3FF9001088A3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFBDC6A8239D3FF9001088A3 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		CFC841D7239AABFE00E05565 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -598,7 +638,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = reimondhill.iOSArtLogicChallenge;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Ramon ArtLogic";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -620,7 +660,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = reimondhill.iOSArtLogicChallenge;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Ramon ArtLogic";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

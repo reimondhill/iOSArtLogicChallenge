@@ -15,6 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static var shared:AppDelegate{
         return UIApplication.shared.delegate as! AppDelegate
     }
+    var statusView: UIView? {
+        return value(forKey: "statusBar") as? UIView
+    }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -27,9 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if ProcessInfo.processInfo.arguments.contains("TEST"){
             print(logClassName, "I am testing")
-//            #if !DEV
-//            window?.rootViewController = UINavigationController(rootViewController: HeadlinesViewController(networkHelper: NetworkHelper(network: MockNetwork())))
-//            #endif
+            window?.rootViewController = UINavigationController(rootViewController: ArtworksViewController(apiManager: ApiManager(network: MockNetworkManager())))
         }
         else{
             window?.rootViewController = UINavigationController(rootViewController: ArtworksViewController(apiManager: ApiManager(network: NetworkManager())))
@@ -54,13 +55,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     extension AppDelegate{
         
         func setupNavigationBarStyle() {
-                    
-            UINavigationBar.appearance().barTintColor = UIColor.navigationBarBackground
-            UINavigationBar.appearance().tintColor = UIColor.navigationBarTint
-            
-            UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.navigationBarText]
             
             UINavigationBar.appearance().isTranslucent = false
+            UINavigationBar.appearance().barTintColor = UIColor.navigationBarBackground
+            UINavigationBar.appearance().tintColor = UIColor.navigationBarTint
+            UINavigationBar.appearance().shadowImage = UIImage()
+            
+            let navbarFont = UIFont(name: "Helvetica", size: TextSize.navigationTitle)!
+            //let barButtonFont = UIFont(name: "Helvetica", size: TextSize.normal)!
+            UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font: navbarFont,
+                                                                NSAttributedString.Key.foregroundColor: UIColor.navigationBarText]
             
             UITabBar.appearance().barTintColor = UIColor.navigationBarBackground
             UITabBar.appearance().tintColor = UIColor.navigationBarTint

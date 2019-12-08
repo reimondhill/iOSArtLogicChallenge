@@ -14,6 +14,11 @@ extension UIViewController{
     //MARK:- Properties
     /// Returns the current trait status 
     var currentTraitStatus:DeviceTraitStatus{ return DeviceTraitStatus.current }
+    
+    var topbarHeight: CGFloat {
+        return (view.window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0.0) +
+            (self.navigationController?.navigationBar.frame.height ?? 0.0)
+    }
 
     
     //MARK:- Public methods
@@ -28,7 +33,7 @@ extension UIViewController{
         let alert = UIAlertController(title: title,
                                       message: message, preferredStyle: .alert)
         
-        alert.addAction(UIAlertAction(title: NSLocalizedString("messages.ok", comment: ""), style: .default, handler: { (action) in
+        alert.addAction(UIAlertAction(title: NSLocalizedString("ok".localized, comment: ""), style: .default, handler: { (action) in
             completion?()
         }))
         
@@ -147,6 +152,32 @@ extension UIViewController{
         
         return button
         
+    }
+    
+    /// Makes a the navigation bar transparent
+    func makeTransparentNavigationBar() {
+        let navBarAppearance = UINavigationBarAppearance()
+        
+        navBarAppearance.configureWithTransparentBackground()
+        navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.navigationBarText]
+        navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.navigationBarText]
+        navBarAppearance.backgroundColor = UIColor.navigationBarBackground.withAlphaComponent(1)
+        
+        navigationController?.navigationBar.standardAppearance = navBarAppearance
+        navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
+    }
+    
+    /// Makes a the navigation bar transparent
+    func makeSolidtNavigationBar() {
+        let navBarAppearance = UINavigationBarAppearance()
+        
+        navBarAppearance.configureWithOpaqueBackground()
+        navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.navigationBarText]
+        navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.navigationBarText]
+        navBarAppearance.backgroundColor = UIColor.navigationBarBackground.withAlphaComponent(1)
+        
+        navigationController?.navigationBar.standardAppearance = navBarAppearance
+        navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
     }
     
 }

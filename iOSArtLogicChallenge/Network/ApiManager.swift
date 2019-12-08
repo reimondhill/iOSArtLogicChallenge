@@ -10,6 +10,9 @@ import Foundation
 
 protocol ApiManaging {
     var token: String { get }
+    var collectionsDidRefresh: ((Result<[CollectionItem], Error>) -> Void)? { get set }
+    func startCollectionsRefresh()
+    func stopCollectionsRefresh()
     func getCollections(completion:@escaping (Result<[CollectionItem], Error>)->Void)
     func getPresentation(uid: String, completion:@escaping (Result<PresentationResponse, Error>)->Void)
 }
@@ -23,6 +26,9 @@ class ApiManager: NSObject {
     //MARK:- Properties
     //MARK: Constants
     let network:Network
+    private let baseURL = "https://artlogicdevelopertest.privateviews.com/api/browse/all"
+    private var timer: Timer?
+    private var _collectionsDidRefresh: ((Result<[CollectionItem], Error>) -> Void)?
     
     //MARK:- Constructor
     required init(network:Network){
@@ -39,9 +45,35 @@ extension ApiManager: ApiManaging {
     
     var token: String { return "feca0f24c0724208ac102c17592243a1" }
     
+    var collectionsDidRefresh: ((Result<[CollectionItem], Error>) -> Void)? {
+        get {
+            return _collectionsDidRefresh
+        }
+        set {
+            _collectionsDidRefresh = newValue
+        }
+    }
+    
+    func startCollectionsRefresh() {
+        timer = Timer.scheduledTimer(withTimeInterval: (5 * 60), repeats: true, block: { [weak self] (timer) in
+            guard let strongSelf = self else { return }
+            
+            print(strongSelf.logClassName, "Updating collections")
+            strongSelf.getCollections { (result) in
+                strongSelf.collectionsDidRefresh?(result)
+            }
+            
+        })
+    }
+    
+    func stopCollectionsRefresh() {
+        timer?.invalidate()
+        timer = nil
+    }
+    
     func getCollections(completion: @escaping (Result<[CollectionItem], Error>) -> Void) {
         
-        guard let url = URL(string: network.artworks) else {
+        guard let url = URL(string: baseURL) else {
             completion(.failure(NetworkError.invalidURL))
             return
         }
@@ -61,8 +93,8 @@ extension ApiManager: ApiManaging {
         
     func getPresentation(uid: String, completion: @escaping (Result<PresentationResponse, Error>) -> Void) {
         
-        let presetationExtended = network.artworks.appending("/\(uid)")
-        guard let url = URL(string: network.artworks) else {
+        let presetationExtended = baseURL.appending("/\(uid)")
+        guard let url = URL(string: presetationExtended) else {
             completion(.failure(NetworkError.invalidURL))
             return
         }

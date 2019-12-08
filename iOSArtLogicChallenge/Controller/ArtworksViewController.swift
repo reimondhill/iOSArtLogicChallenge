@@ -8,11 +8,17 @@
 
 import UIKit
 
-class ArtworksViewController: UIViewController {
+class ArtworksViewController: BaseViewController {
 
     //MARK:- Properties
-    private let apiManager: ApiManaging
-    private var collectionItems: [CollectionItem] = []
+    private var apiManager: ApiManaging
+    private var collectionItems: [CollectionItem] = [] {
+        didSet {
+            DispatchQueue.main.async { [weak self] in
+                self?.artworksTableView.reloadData()
+            }
+        }
+    }
     
     
     //UI
@@ -47,17 +53,33 @@ extension ArtworksViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "private_views".localized
         setupView()
+        loaderOverlay.showOverlay()
         apiManager.getCollections { [weak self] (result) in
             guard let strongSelf = self else { return }
             
             DispatchQueue.main.async {
+                strongSelf.loaderOverlay.hideOverlayView()
+                
                 switch result {
                 case .success(let collectionItems):
                     strongSelf.collectionItems = collectionItems
-                    strongSelf.artworksTableView.reloadData()
+                    
+                    strongSelf.apiManager.startCollectionsRefresh()
+                    strongSelf.apiManager.collectionsDidRefresh = { (resultRefresh) in
+                        switch resultRefresh {
+                        case .success(let collectionItemsRefresh):
+                            strongSelf.collectionItems = collectionItemsRefresh
+                        case .failure(let errorRefresh):
+                            //TODO What will we do?
+                            print(strongSelf.logClassName, "ERROR while refreshing: ", errorRefresh)
+                        }
+                    }
+                    
                 case .failure(let error):
-                    print(error)
+                    print(strongSelf.logClassName, "ERROR -> ", error)
+                    strongSelf.showAlert(withTitle: "error".localized, message: "error_generic".localized, sender: strongSelf, completion: nil)
                 }
             }
 

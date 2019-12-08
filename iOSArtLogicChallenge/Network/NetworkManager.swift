@@ -11,12 +11,9 @@ import Foundation
 
 class NetworkManager: NSObject, Network {
     
-    var artworks: String {
-        return "https://artlogicdevelopertest.privateviews.com/api/browse/all"
-    }
-    
     func fetchCodable<T>(url:URL, method: RequestType, params: [String: Any], completion: @escaping (Result<T, Error>) -> Void) where T : Decodable, T : Encodable {
         
+        print(logClassName, "Fetching at ", url.absoluteString)
         var urlRequest = URLRequest(url: url)
         
         switch method {
@@ -81,8 +78,7 @@ private extension NetworkManager {
                     
             }
             
-            
-            print(String(decoding: data, as: UTF8.self))
+            //print(String(decoding: data, as: UTF8.self))
             
             completion(.success(data))
             

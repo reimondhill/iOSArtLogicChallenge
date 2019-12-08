@@ -14,30 +14,22 @@ class BaseLabel: UILabel {
     //MARK: Constants
     enum LabelConfiguration:Int, CaseIterable{
         //Custom NavBars
-        case navBar = 0
-        case normal = 1
-        case normalLight = 2
-        case headline = 3
+        case navBar
+        case header
+        case subheader
+        case title
+        case normal
+        case normalSmall
         //More future cases
     }
     
     
     //MARK: Vars
-    var labelConfiguration:LabelConfiguration = .normal{
+    var labelConfiguration:LabelConfiguration {
         didSet{
             setupView()
         }
     }
-    @IBInspectable var labelConfigurationOption:Int{
-        get{
-            return labelConfiguration.rawValue
-        }
-        set{
-            guard let labelConfiguration = LabelConfiguration(rawValue: newValue) else{ return }
-            self.labelConfiguration = labelConfiguration
-        }
-    }
-    
     
     
     //MARK:- Constructor
@@ -49,10 +41,8 @@ class BaseLabel: UILabel {
         
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        //Despite not using neither storyboards nor xib, it supports this constructor for possible future development
-        super.init(coder: aDecoder)
-        
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
 }
@@ -69,17 +59,23 @@ private extension BaseLabel{
         switch labelConfiguration {
         case .navBar:
             textColor = UIColor.navigationBarText
-            font = UIFont.systemFont(ofSize: TextSize.navigationTitle, weight: .semibold)
+            font = UIFont (name: "Helvetica-Bold", size: TextSize.navigationTitle)
+        case .header:
+            textColor = UIColor.mainText
+            font = UIFont (name: "Helvetica-Bold", size: TextSize.header)
+        case .subheader:
+            textColor = UIColor.mainText
+            font = UIFont (name: "Helvetica-Bold", size: TextSize.subHeader)
+        case .title:
+            textColor = UIColor.mainText
+            font = UIFont (name: "Helvetica-Bold", size: TextSize.title)
         case .normal:
             textColor = UIColor.mainText
-            font = UIFont.systemFont(ofSize: TextSize.normal, weight: .regular)
+            font = UIFont (name: "Helvetica", size: TextSize.normal)
             textAlignment = .justified
-        case .normalLight:
-            textColor = UIColor.secondaryText
-            font = UIFont.systemFont(ofSize: TextSize.normal, weight: .light)
-        case .headline:
+        case .normalSmall:
             textColor = UIColor.mainText
-            font = UIFont.systemFont(ofSize: TextSize.title, weight: .bold)
+            font = UIFont.systemFont(ofSize: TextSize.normalSmall, weight: .light)
         }
         
     }

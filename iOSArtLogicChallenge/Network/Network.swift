@@ -19,13 +19,7 @@ enum RequestType:String{
     case post = "POST"
 }
 
-protocol NetworkURL {
-    ///StringURL for fetching headlines
-    var artworks:String{ get }
-
-}
-
-protocol Network:NetworkURL {
+protocol Network {
     
     /// Perform GET/POST request returning the result decoded object
     ///

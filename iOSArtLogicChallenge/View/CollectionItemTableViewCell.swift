@@ -86,8 +86,8 @@ private extension CollectionItemTableViewCell {
         
         contentView.addSubview(titleLabel)
         titleLabel.snp.makeConstraints { (maker) in
-            maker.left.equalTo(detailImageView.snp.right)
-            maker.top.bottom.right.equalToSuperview()
+            maker.left.equalTo(detailImageView.snp.right).inset(-Margins.medium)
+            maker.top.bottom.right.equalToSuperview().inset(Margins.medium)
         }
         
     }

@@ -11,9 +11,9 @@ import UIKit
 extension UIColor{
     
     //MARK:- App Colors Extension
-    static var accentColor:UIColor {
-        return UIColor(red: 187.0/255.0, green: 25.0/255.0, blue: 25.0/255.0, alpha: 1)
-    }
+//    static var accentColor:UIColor {
+//        return UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1)
+//    }
     
     static var defaultSeparator:UIColor {
         return UIColor.lightGray
@@ -26,20 +26,20 @@ extension UIColor{
     
     //MARK: Status, Toolbar and NavigationBar
     static var statusBarBackground:UIColor{
-        return accentColor
+        return UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1)
     }
     
     static var navigationBarBackground:UIColor{
-        return accentColor
+        return UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1)
     }
     static var navigationBarTint:UIColor{
-        return UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1)
+        return UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1)
     }
     static var navigationBarText:UIColor{
-        return UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1)
+        return UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1)
     }
     static var toolbar:UIColor{
-        return accentColor
+        return UIColor(red: 235.0/255.0, green: 235.0/255.0, blue: 235.0/255.0, alpha: 1)
     }
     static var toolbarTint:UIColor{
         return navigationBarTint
@@ -48,10 +48,10 @@ extension UIColor{
     
     //MARK: Text
     static var mainText:UIColor{
-        return UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1)
+        return UIColor(red: 113.0/255.0, green: 113.0/255.0, blue: 113.0/255.0, alpha: 1)
     }
-    static var secondaryText:UIColor{
-        return UIColor(red: 61.0/255.0, green: 61.0/255.0, blue: 61.0/255.0, alpha: 1)
+    static var mainTextInverted:UIColor{
+        return UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1)
     }
     
     
@@ -94,7 +94,7 @@ struct TextSize {
     static let normal:CGFloat = DeviceTraitStatus.current == .wRhR ? 18:15
     static let normalSmall:CGFloat = DeviceTraitStatus.current == .wRhR ? 16:13
     
-    static let heaader:CGFloat = DeviceTraitStatus.current == .wRhR ? 42:32
+    static let header:CGFloat = DeviceTraitStatus.current == .wRhR ? 42:32
     static let subHeader:CGFloat = DeviceTraitStatus.current == .wRhR ? 29:21
     
 }
