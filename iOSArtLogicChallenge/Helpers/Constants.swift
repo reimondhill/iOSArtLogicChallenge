@@ -66,7 +66,7 @@ enum OrientationStatus:CaseIterable {
     case portrait
     
     static var current:OrientationStatus{
-        switch UIApplication.shared.statusBarOrientation{
+        switch UIApplication.shared.windows.first?.windowScene?.interfaceOrientation {
         case .portrait:
             return .portrait
         case .portraitUpsideDown:

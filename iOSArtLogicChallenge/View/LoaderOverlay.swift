@@ -36,7 +36,7 @@ class LoaderOverlay{
 //MARK:- Public methods
 extension LoaderOverlay{
     
-    func showOverlay(view: UIView = UIApplication.shared.keyWindow!) {
+    func showOverlay(view: UIView = UIApplication.shared.windows.filter {$0.isKeyWindow}.first!) {
         
         guard !isPresented else{ return }
         
@@ -57,7 +57,7 @@ extension LoaderOverlay{
         backgroundView.addSubview(overlayView)
         
         activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
-        activityIndicator.style = .whiteLarge
+        activityIndicator.style = .whiteLarge//UIActivityIndicatorView.Style.large
         activityIndicator.center = CGPoint(x: overlayView.bounds.width / 2, y: overlayView.bounds.height / 2)
         overlayView.addSubview(activityIndicator)
         
