@@ -7,7 +7,7 @@ The app is coded using Swift 5 and with some of the latest version techniques su
 
 The app also offers a starting set of both Unit and UI tests grouped within differnet Swift files with the possibilty to add more in the future for great *Continuos Integration*.
 
-This demo version takes into consideration the required techniques and protocols as outlined in the brief, however to further develop this app I would consider an overlaping header in the PresentationViewController.
+This demo version takes into consideration the required techniques and protocols as outlined in the brief, however the design has been modified to satify a modern and elegant one. To further develop this app I would consider an overlaping header in the PresentationViewController.
 
 
 ## App flow
