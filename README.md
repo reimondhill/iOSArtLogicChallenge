@@ -1,13 +1,13 @@
 # iOSArtLogicChallenge
-**BBC News Ramon** is a mobile apllication for iOS inspired by *BBC News*. The app works on iOS10+ devices and it supports both iPhone and iPad portrait and landscape designs.
+**Artlogic Ramon** is a mobile apllication for iOS inspired by *Artlogic PrivateViews*. The app works on iOS13+ devices and it supports both iPhone and iPad portrait and landscape designs.
 
-BBC News Ramon allows the user to fetch headlines and to discover the detailed content. Furthermore, the app also provides a user interaction tracking by sending 'stats' to an analytics backend, tracking the UIViewControllers the user has displayed and by sending elapsed time when fetching headlines from the backend.
+Artlogic Ramon allows the user to fetch collections and to discover the presentations. 
 
-The app is coded using Swift 5 and with some of the latest version techniques such as *Result Types*, amongst others – get rid of this and list one more technique. In addition, the code is structured in a way that offers the possibilty to scale easily and to be tested simply using *MVVM*, *Dependency Injection* and *Protocol Oriented Programing*. 
+The app is coded using Swift 5 and with some of the latest version techniques such as *Result Types*, amongst others. In addition, the code is structured in a way that offers the possibilty to scale easily and to be tested simply using *MVVM*, *Dependency Injection* and *Protocol Oriented Programing*. 
 
 The app also offers a starting set of both Unit and UI tests grouped within differnet Swift files with the possibilty to add more in the future for great *Continuos Integration*.
 
-This demo version takes into consideration the required techniques and protocols as outlined in the brief, however to further develop this app I would consider including a stretchy header in the HeadlinesViewController.
+This demo version takes into consideration the required techniques and protocols as outlined in the brief, however to further develop this app I would consider an overlaping header in the PresentationViewController.
 
 
 ## App flow
@@ -16,15 +16,21 @@ This demo version takes into consideration the required techniques and protocols
 ![Alt text](UIResources/Screenshots/sc1.PNG?raw=true)
 
 
-### HeadlinesViewController
+### ArtworksViewController
 ![Alt text](UIResources/Screenshots/sc2.PNG?raw=true)
 
 
 ![Alt text](UIResources/Screenshots/sc3.PNG?raw=true)
 
 
-### HeadlineDetailsViewController
 ![Alt text](UIResources/Screenshots/sc4.PNG?raw=true)
+
+
+### PresentationViewController
+![Alt text](UIResources/Screenshots/sc5.PNG?raw=true)
+
+
+![Alt text](UIResources/Screenshots/sc6.PNG?raw=true)
 
 
 ## Future development
@@ -35,6 +41,8 @@ This demo version takes into consideration the required techniques and protocols
 
 
 ## Recent projects
+https://apps.apple.com/gb/app/campus-society/id1470251818
+
 [Ramon Haro Marques Convert technologies projects](UIResources/RamonHaroMarques_ConvertTechnologiesProjects.pdf)
 
 
