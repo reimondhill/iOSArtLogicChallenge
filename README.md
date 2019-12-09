@@ -41,6 +41,8 @@ This demo version takes into consideration the required techniques and protocols
 
 
 ## Recent projects
+https://apps.apple.com/gb/app/campus-society/id1470251818
+
 [Ramon Haro Marques Convert technologies projects](UIResources/RamonHaroMarques_ConvertTechnologiesProjects.pdf)
 
 
