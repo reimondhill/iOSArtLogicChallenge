@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CFC841C8239AABFC00E05565"
-               BuildableName = "iOSArtLogicChallenge.app"
+               BuildableName = "Ramon ArtLogic.app"
                BlueprintName = "iOSArtLogicChallenge"
                ReferencedContainer = "container:iOSArtLogicChallenge.xcodeproj">
             </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CFC841C8239AABFC00E05565"
-            BuildableName = "iOSArtLogicChallenge.app"
+            BuildableName = "Ramon ArtLogic.app"
             BlueprintName = "iOSArtLogicChallenge"
             ReferencedContainer = "container:iOSArtLogicChallenge.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CFC841C8239AABFC00E05565"
-            BuildableName = "iOSArtLogicChallenge.app"
+            BuildableName = "Ramon ArtLogic.app"
             BlueprintName = "iOSArtLogicChallenge"
             ReferencedContainer = "container:iOSArtLogicChallenge.xcodeproj">
          </BuildableReference>
